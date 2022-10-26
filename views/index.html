@@ -1,8 +1,15 @@
 <div>
-	{{ range .Facts }}
-	<div>
-	    <p>{{ .Question }}</p>
-	    <p>{{ .Answer }}</p>
-	</div>
-	{{ end }}
+    {{ if .Facts }}
+        {{ range .Facts }}
+        <div>
+            <p>{{ .Question }}</p>
+            <p>{{ .Answer }}</p>
+        </div>
+        {{ end }}
+    {{ else }}
+        <div>
+            <p>No facts yet.</p>
+            <p><a href="/fact">Add now</a></p>
+        </div>
+    {{ end }}
 </div>
