@@ -1,1 +1,8 @@
-This content is unique to the index page
+<div>
+	{{ range .Facts }}
+	<div>
+	    <p>{{ .Question }}</p>
+	    <p>{{ .Answer }}</p>
+	</div>
+	{{ end }}
+</div>
