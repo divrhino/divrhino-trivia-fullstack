@@ -34,7 +34,7 @@ func CreateFact(c *fiber.Ctx) error {
 
 	database.DB.Db.Create(&fact)
 
-	return c.Status(200).JSON(fact)
+	return ConfirmationView(c)
 }
 
 func ConfirmationView(c *fiber.Ctx) error {
