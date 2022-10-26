@@ -17,6 +17,13 @@ func ListFacts(c *fiber.Ctx) error {
 	})
 }
 
+func NewFactView(c *fiber.Ctx) error {
+	return c.Render("new", fiber.Map{
+		"Title":    "New Fact",
+		"Subtitle": "Add a cool fact!",
+	})
+}
+
 func CreateFact(c *fiber.Ctx) error {
 	fact := new(models.Fact)
 	if err := c.BodyParser(fact); err != nil {
