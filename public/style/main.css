@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body,html {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    line-height: 1;
+
+    background: hsla(64, 41%, 92%, 1);
+
+    background: linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    
+    background: -moz-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    
+    background: -webkit-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2F3E2", endColorstr="#B2E5F8", GradientType=1 );
+}
+
+button {
+    background: none;
+    text-decoration: inherit;
+    font-family: system-ui;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(75, 83, 102);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(75, 83, 102);
+    text-align: center;
+}
+
+strong {
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form label span {
+    display: block;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+form input {
+    width: 100%;
+    padding: 5px 16px;
+    border-radius: 3px;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+
+form input[type="submit"] {
+    background: rgb(15, 23, 42);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* General */
+.btn {
+    padding: 10px 16px;
+    background-color: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(15, 23, 42, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid rgba(15,23,42,.1);
+}
+
+.btn:hover {
+    background-color: rgba(252, 252, 252, 1);
+
+}
+    
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Site Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+}
+
+.site-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-logo img {
+    width: 80px;
+}
+
+.fact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    margin-bottom: 10px;
+    padding: 16px 20px;
+    color: #555555;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.fact-item .question-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fact-item .answer-toggle {
+    flex-basis: 10%;
+    align-self: flex-start;
+    background-color: #f4e6f3;
+    border: 1px solid #f4b3ef;
+    padding: 5px 10px;
+    color: #bd65b6;
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fact-item .question {
+    margin-bottom:10px;
+}
+
+.fact-item .answer {
+    color: #bd65b6;
+    font-style: italic;
+}
+
+.fact-item .fibre-content {
+    font-style: italic;
+}
+
+.no-facts,
+.add-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+.all-errors {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #A65252;
+    line-height: 20px;
+    background-color: #FFCCCC;
+    border-radius: 5px;
+}
